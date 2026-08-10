@@ -11,12 +11,20 @@ const dividir = (a, b) => {
     return a / b;
 };
 
+const modulo = (a, b) => {
+    if (b === 0) {
+        throw new Error("No se puede sacar modulo de cero");
+    }
+    return a % b;
+};
+
 const operaciones = {
     "+": sumar,
     "-": restar,
     "*": multiplicar,
     "x": multiplicar,
     "/": dividir,
+    "%": modulo,
 };
 
 const calcular = (a, operador, b) => {
@@ -35,5 +43,6 @@ module.exports = {
     restar,
     multiplicar,
     dividir,
+    modulo,
     calcular
 };
