@@ -18,6 +18,8 @@ const modulo = (a, b) => {
     return a % b;
 };
 
+const potencia = (a, b) => a ** b;
+
 const operaciones = {
     "+": sumar,
     "-": restar,
@@ -25,6 +27,7 @@ const operaciones = {
     "x": multiplicar,
     "/": dividir,
     "%": modulo,
+    "^": potencia,
 };
 
 const calcular = (a, operador, b) => {
@@ -44,5 +47,6 @@ module.exports = {
     multiplicar,
     dividir,
     modulo,
+    potencia,
     calcular
 };
