@@ -10,7 +10,8 @@
   "author": "Eli Tobon <itobon@fluidattacks.com>",
   "license": "MIT",
   "bin": {
-    "ramdom/str.msg": "./bin/global.js"
+    "ramdom/str.msg": "./bin/global.js",
+    "calculadora": "./bin/calculator.js"
   },
   "preferGlobal": true,
   "dependencies": {
